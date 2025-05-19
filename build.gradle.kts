@@ -30,6 +30,12 @@ dependencies {
 
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	developmentOnly("org.springframework.boot:spring-boot-starter-actuator")
+
+	// JPA（Entity, Repository）のため
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	// PostgreSQL ドライバ
+	implementation("org.postgresql:postgresql:42.5.4")
+
 }
 
 tasks.withType<Test> {
